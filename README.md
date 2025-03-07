@@ -18,6 +18,6 @@ xelatex zjureport.tex
 ```
 ## 效果图
 
-![[https://github.com/LeoZhangXYJ/ZJU_GIS_LabReport/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE1.png]]
+![image1](https://github.com/LeoZhangXYJ/ZJU_GIS_LabReport/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE1.png)
 
-![[https://github.com/LeoZhangXYJ/ZJU_GIS_LabReport/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE2.png]]
+![image2](https://github.com/LeoZhangXYJ/ZJU_GIS_LabReport/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE2.png)
