@@ -16,3 +16,8 @@ tectonic zjureport.tex
 ```bash
 xelatex zjureport.tex
 ```
+## 效果图
+
+![[效果图1.png]]
+
+![[效果图2.png]]
