@@ -1,11 +1,75 @@
 \documentclass{zjureport}
 
+\usepackage{amsmath}
 \usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{float}
+
+% 代码高亮颜色定义
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% JavaScript 代码样式
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, continue, debugger, default, delete, do, else, finally, for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, var, void, while, with},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{codepurple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+% HTML 代码样式
+\lstdefinelanguage{HTML}{
+    basicstyle=\ttfamily\footnotesize,
+    sensitive=true,
+    comment=[s]{<!--}{-->},
+    commentstyle=\color{gray}\ttfamily,
+    stringstyle=\color{orange}\ttfamily,
+    morestring=[b]",
+    morestring=[b]',
+    keywords=[1]{DOCTYPE, html, head, body, title, meta, link, script, style, div, span, p, a, img, ul, ol, li, table, tr, td, th, form, input, textarea, button, select, option, class, id, src, href, alt, title, style, type, name, value},
+    keywordstyle=[1]{\color{blue}\bfseries},
+}
+
+% Python 代码样式
+\lstdefinelanguage{Python}{
+  basicstyle=\ttfamily\footnotesize,
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta}\bfseries,
+  stringstyle=\color{codepurple},
+  numbers=left,
+  numberstyle=\tiny\color{codegray},
+  stepnumber=1,
+  numbersep=5pt,
+  backgroundcolor=\color{backcolour},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=4,
+  breaklines=true,
+  breakatwhitespace=false,
+}
+
 \hypersetup{
     colorlinks=true,
 }
-\usepackage{float} 
 
+\pagestyle{fancy}
+\fancyhf{} % 清除所有页眉页脚
+\renewcommand{\headrulewidth}{0pt} % 移除页眉线
+\renewcommand{\footrulewidth}{0pt} % 移除页脚线（如果有）
 
 \major{地理信息科学} %专业
 \name{路人甲} %名字
@@ -19,7 +83,6 @@
 \expname{路人甲，路人乙，路人丙} %实验人
 \LABdate{\today} %日期
 
-
 \begin{document}
 
 \makeheader
@@ -31,7 +94,6 @@
 \subsection{实验要求}
 独立完成实验，将实验内容2）的解题思路、解题步骤、解题结果与分析撰写
 成实验报告。
-
 
 \section{实验内容和步骤}
 
@@ -49,8 +111,7 @@
 \end{enumerate}
 
 \subsection{实验原理}
-矢量空间分析。 
-
+矢量空间分析。
 
 \section{主要仪器设备}
 计算机和ArcGIS Pro软件
@@ -72,8 +133,6 @@
     \label{fig:buffer}
 \end{figure}
 
-
-
 \section{实验结果和分析}
 
 \begin{lstlisting}[language=python]
@@ -81,8 +140,37 @@
 import arcpy
 import sys
 #read data
-data=arcpy.FeatureSet("example.shp”)
+data=arcpy.FeatureSet("sexample.shp")
+\end{lstlisting}
 
+\begin{lstlisting}[language=JavaScript]
+// 引入必要的库或模块
+// (这里假设你是在 Node.js 环境下，需要引入 fs 模块)
+const fs = require('fs');
+
+// 读取文件
+fs.readFile('example.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error('读取文件出错:', err);
+    return;
+  }
+  console.log(data);
+});
+\end{lstlisting}
+
+\begin{lstlisting}[language=html]
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>示例 HTML 页面</title>
+</head>
+<body>
+  <!-- 页面内容 -->
+  <h1>欢迎来到我的页面!</h1>
+  <p>这是一个示例段落。</p>
+</body>
+</html>
 \end{lstlisting}
 
 \section{讨论}

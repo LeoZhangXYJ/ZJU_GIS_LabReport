@@ -40,6 +40,7 @@
   emphstyle    = [1]\itshape\color{emph1},
   emphstyle    = [2]\color{emph2},
   basicstyle   = {\small\ttfamily},
+  backgroundcolor=\color{gray!10},
 }
 
 % 信息
